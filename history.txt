@@ -1,0 +1,150 @@
+    1  sudo apt update
+    2  sudo apt install openjdk-11-jdk
+    3  wget -q -O - https://pkg.jenkins.io/ci.gpg.key | sudo apt-key add -
+    4  sudo sh -c 'echo deb http://pkg.jenkins.io/debian/ stable main > /etc/apt/sources.list.d/jenkins.list'
+    5  sudo apt update
+    6  sudo apt install jenkins
+    7  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+    8  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+    9  sudo apt-get update
+   10  sudo apt-get install jenkins
+   11  java -version
+   12  ls
+   13  vim first.sh
+   14  sh first.sh 
+   15  docker version
+   16  minikube start --driver=docker
+   17  minikube status
+   18  kubectl -version
+   19  kubectl get pods
+   20  sudo snap install kubectl
+   21  sudo snap install kubectl --classic
+   22  kubectl get pods
+   23  git clone https://github.com/iam-veeramalla/go-web-app
+   24  cd go-web-app/
+   25  code .
+   26  cd ..
+   27  rmdir go-web-app/
+   28  rmdir -f go-web-app/
+   29  rmdir -r go-web-app/
+   30  rmdir --help
+   31  rmdir -rf go-web-app/
+   32  rm -f go-web-app/
+   33  rm -r go-web-app/
+   34  rm -rf go-web-app/
+   35  ls
+   36  gi clone https://github.com/Nithin-kasturi/go-web-app
+   37  git clone https://github.com/Nithin-kasturi/go-web-app
+   38  cd go-web-app/
+   39  code .
+   40  docker login
+   41  ls
+   42  docker build -t nithin8/go-web-app:v1 .
+   43  go
+   44  sudo snap install go
+   45  sudo snap install go --classic
+   46  docker build -t nithin8/go-web-app:v1 .
+   47  go 
+   48  docker build -t nithin8/go-web-app:v1 .
+   49  docker run -p -it 8080:8080 nithin8/go-web-app:v1
+   50  docker run -p 8080:8080 -it nithin8/go-web-app:v1
+   51  docker push nithin8/go-web-app:v1
+   52  kubectl apply -f kubernetes/manifests/deployment.yml
+   53  ls
+   54  kubectl get pods
+   55  kubectl get ing
+   56  kubectl get pods
+   57  kubectl edit svc go-web-app
+   58  kubectl get svc
+   59  kubectl get nodes -o wide
+   60  minikube ip
+   61  kubectl get svc
+   62  minikube tunnel
+   63  minikube ip
+   64  kubectl get svc
+   65  kubectl port-forward svc/go-web-app 8080:80
+   66  minikube addons enable ingress
+   67  microk8s enable ingress
+   68  sudo snap install microk8s
+   69  sudo snap install microk8s --classic
+   70  kubectl get svc ing
+   71  kubectl get ing
+   72  nslookup 192.168.49.2
+   73  sudo apt install bind9-dnsutils
+   74  nslookup 192.168.49.2
+   75  kubectl get ing
+   76  nslookup 192.168.49.2
+   77  nslookup go-web-app.local
+   78  sudo nano /etc/hosts
+   79  nslookup go-web-app.local
+   80  helm
+   81  sudo snap install helm
+   82  sudo snap install helm --classic
+   83  helm version
+   84  helm create go-web-app-chart
+   85  cd Helm/
+   86  helm create go-web-app-chart
+   87  cd go-web-app-chart/
+   88  ls
+   89  rm charts
+   90  rm -rf charts
+   91  cd templates/
+   92  rm -rf .
+   93  cp ../../../Kubernetes/manifests/' .
+   94  cp ../../../Kubernetes/manifests/* .
+   95  ls
+   96  rm -rf *
+   97  ls
+   98  cp ../../../Kubernetes/manifests/* .
+   99  ls
+  100  kubectl get all
+  101  cd ./
+  102  cd /
+  103  ls
+  104  java -version
+  105  sudo systemctl start jenkins
+  106  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+  107  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+  108  sudo apt-get update
+  109  sudo apt-get install jenkins
+  110  sudo systemctl start jenkins
+  111  sudo kill $(sudo lsof -t -i:8080)
+  112  sudo jenkins start
+  113  sudo apt update
+  114  sudo apt install fontconfig openjdk-17-jre
+  115  java -version
+  116  openjdk version "17.0.13" 2024-10-15
+  117  OpenJDK Runtime Environment (build 17.0.13+11-Debian-2)
+  118  OpenJDK 64-Bit Server VM (build 17.0.13+11-Debian-2, mixed mode, sharing)
+  119  jav -version
+  120  java -version
+  121  sudo start jenkins
+  122  sudo jenkins start
+  123  curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+  124  sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+  125  minikube status
+  126  minikube start
+  127  curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+  128  sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+  129  minikube status
+  130  minikube start --driver=docker
+  131  docker --version
+  132  sudo apt update
+  133  sudo apt install docker.io
+  134  sudo systemctl start docker
+  135  sudo systemctl enable docker
+  136  sudo systemctl status docker
+  137  minikube start --driver=docker
+  138  sudo usermod -aG docker $USER
+  139  minikube start --driver=docker
+  140  newgrp docker
+  141  echo UGNYVERGNzNQSi12VmJsaA== | base64 --decode
+  142  kubectl get all
+  143  kubectl port-forward svc/go-web-app 8080:80
+  144  kubectl port-forward svc/go-web-app 808:80
+  145  kubectl port-forward svc/go-web-app 8081:80
+  146  kubectl get pods
+  147  kubectl get svc
+  148  kubectl port-forward svc/go-web-app 8081:80
+  149  history
+  150  history >>history.txt
